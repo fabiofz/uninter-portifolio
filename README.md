@@ -5,7 +5,7 @@ Projeto acadêmico de Fundamentos da Programação Web.
 ## Tecnologias
 - HTML5
 - CSS3
-- JavaScript puro
+- JavaScript
 
 ## Estrutura
 - `index.html`: página única com as quatro seções obrigatórias.

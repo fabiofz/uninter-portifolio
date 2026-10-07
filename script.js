@@ -1,4 +1,3 @@
-// Menu responsivo: abre e fecha o menu em telas menores.
 const menuToggle = document.getElementById('menuToggle');
 const menuPrincipal = document.getElementById('menuPrincipal');
 
@@ -7,7 +6,6 @@ menuToggle.addEventListener('click', () => {
   menuToggle.setAttribute('aria-expanded', String(aberto));
 });
 
-// Fecha o menu depois que o usuário escolhe uma seção.
 document.querySelectorAll('#menuPrincipal a').forEach((link) => {
   link.addEventListener('click', () => {
     menuPrincipal.classList.remove('open');
@@ -15,7 +13,6 @@ document.querySelectorAll('#menuPrincipal a').forEach((link) => {
   });
 });
 
-// Alternância entre tema escuro e claro.
 const themeToggle = document.getElementById('themeToggle');
 themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('light-theme');
@@ -24,7 +21,6 @@ themeToggle.addEventListener('click', () => {
   themeToggle.setAttribute('aria-label', claro ? 'Ativar tema escuro' : 'Ativar tema claro');
 });
 
-// Validação e simulação de envio do formulário de contato.
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
 
@@ -72,7 +68,6 @@ contactForm.addEventListener('submit', (event) => {
     return;
   }
 
-  // Simulação de envio exigida pela atividade: limpa o formulário e confirma a operação.
   contactForm.reset();
   formStatus.textContent = 'Mensagem enviada com sucesso! (simulação acadêmica)';
   formStatus.classList.add('success');
